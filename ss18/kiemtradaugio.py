@@ -31,9 +31,9 @@ def add_product(products_list):
             product_price = int(input("Nhập giá bán: "))
             if product_price > 0:
                 break
-            print("Giá bán phải lớn hơn 0!")
+            print("Giá bán phải lớn hơn 0")
         except ValueError:
-            print("Giá bán phải là số nguyên!")
+            print("Giá bán phải là số nguyên")
 
     product = {
         'id': product_id,
@@ -42,7 +42,7 @@ def add_product(products_list):
     }
 
     products_list.append(product)
-    print("Thêm sản phẩm thành công!")
+    print("Thêm sản phẩm thành công")
 
 def update_price(products_list):
     product_id = input("Nhập mã sản phẩm cần sửa giá: ")
@@ -58,11 +58,11 @@ def update_price(products_list):
                         product['price'] = new_price
                         print("Cập nhật giá thành công!")
                         return
-                    print("Giá phải lớn hơn 0!")
+                    print("Giá phải lớn hơn 0")
                 except ValueError:
-                    print("Giá phải là số nguyên!")
+                    print("Giá phải là số nguyên")
 
-    print(f"Không tìm thấy sản phẩm có mã {product_id}!")
+    print(f"Không tìm thấy sản phẩm có mã {product_id}")
 
 def main():
     while True:
